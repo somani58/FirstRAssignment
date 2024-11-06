@@ -1,0 +1,84 @@
+---
+title: "FirstAssignment"
+author: "Sahana"
+date: "2024-11-06"
+output:
+  html_document: default
+  pdf_document: default
+  word_document: default
+---
+
+```{r}
+#1
+animals <- c( "Snake", "Ostrich", "Cat", "Spider") # vector of city names
+num_legs <- c(0, 2, 4, 8) # vector of populations
+animals_df <-data.frame(animals,num_legs)
+```
+
+```{r}
+animals_df
+```
+```{r}
+x_vect<-seq(12,2,-2)
+x_vect
+```
+```{r}
+X<-matrix(seq(12,2,-2),2,3)
+X
+```
+```{r}
+Y<-matrix(seq(4),2,2)
+Y
+```
+```{r}
+Z<-matrix(seq(4,10,2),2,2)
+Z
+```
+```{r}
+t(Z)
+t(Y)
+```
+```{r}
+Y+Z
+Z+Y
+```
+```{r}
+Y*Z
+Z*Y
+```
+```{r}
+solve(Y)
+```
+```{r}
+Y %*% X
+```
+
+```{r}
+solve(Y) %*% X 
+```
+```{r}
+solve(Y,X)
+```
+```{r}
+x<-c(seq(0,20,0.01))
+x
+```
+```{r}
+y<-c(sin(x))
+y
+```
+```{r}
+sin_df<-data.frame(x,y)
+head(sin_df,3)
+```
+```{r}
+plot(sin_df)
+```
+```{r}
+install.packages("usethis") # Install the "usethis" R package
+library(usethis) # Load the "usethis" R library
+use_git_config(user.name = "somani58", user.email = "sahanasomani58@gmail.com")
+```
+
+
+
